@@ -1,7 +1,7 @@
 const express =  require('express');
 const router = express.Router();
 
-const doctorsApi = require('../../../controllers/api/v1/doctors_api');
+const doctorsApi = require('../../../controllers/api/v1/doctors_api.js');
 router.post('/register', doctorsApi.register);
 router.post('/login', doctorsApi.login);
 module.exports = router;
